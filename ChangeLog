@@ -1,0 +1,39 @@
+Version 0.5:
+- added agressive mode: see MAN-page for details (-L option).
+- added possibility of sending DHCPRELEASE from random Ethernet & IP addresses of 
+	clients so as to have an ability of clearing DHCP server's pool manually.
+- added possibility of ARP scanning of a random local network through the specified 
+	interface irrespective of interface's IP configuration and routing settings. 
+	Is used for testing availability of clients who managed to receive incorrect 
+	confiruration from illegal DHCP server.
+- added possibility of entering MAC address using a hyphen as a delimeter of octets. 
+	Before only colon could be used as a delimeter of octets. 
+- some changes were made in format of outputting information: added an output of 
+	a network mask assigned by DHCP server in CIDR notation; 
+	ethernet address of a found server is specified only if it was discovered.
+- added quiet mode.
+- added build for OpenBSD, NetBSD, DragonFlyBSD, Mac OS.
+- added MAN-files in Russian and English languages.
+
+WARNING!!! The program needs an additional testing for FreeBSD, 
+	OpenBSD and NetBSD. It wasn't tested on MacOS because of absence 
+	of a computer with this OS. Author will be grateful if somebody 
+	will male a testing and report about the results.
+
+Version 0.4:
+- the programm ported to Windows.
+- added possibility of looking through a list of interfaces (option -D).
+- child number when flooding limited to 32.
+
+Version 0.3.2.2:
+- improved realization of timeout when expecting a server answer, 
+	added -T option which sets timeout in seconds
+- fixed: spelling.
+- more detailed output in case of incorrect configuration. 
+
+Version 0.3.2.1:
+- output information in test mode is more detailed:
+	DHCP SRV: 192.168.1.1 (SRC IP-hdr 192.168.1.1), SRV ether: 00:1C:10:AB:62:19 LT: 24h (86400s) YIP: 192.168.1.105
+
+Version 0.3.2:
+- added possibility of DHCP flood.

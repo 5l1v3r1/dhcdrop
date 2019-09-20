@@ -1,0 +1,3 @@
+./configure [--bindir=/path/to/root/exec/dir] [--enable-static-build - for static linking lpcap]
+make 
+make install
